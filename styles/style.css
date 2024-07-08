@@ -5,16 +5,17 @@
 *{
     max-width: 1390px;
     font-family: Big Shoulders Display;
+    
 }
 #banner{
-    width: 100%;
+    max-width: 1390px;
     height: 400px;
     display: flex;
     border: 5px;
     position: relative;
 }
 #linear-color{
-    width: 400px;
+    min-width: 280px;
     background: linear-gradient(92deg, #080018 0%, #FF2929 45.93%, #FFB21C 97.73%);
 }
 #linear-color .logo{
@@ -28,6 +29,7 @@ padding: 10px;
     width: 800px;
     background: url(../assets/banner/noisy-background\ 1.png);
     background-color: black;
+    position: relative;
     
 }
 #bannerImg{
@@ -36,32 +38,36 @@ padding: 10px;
     position: absolute;
     bottom: 0;
     left: 100px;
-
+    z-index: 20;
 }
 #topRightButton{
-    padding: 20px;
-}
-#topRightButton img{
+    margin: 10px 10px 300px 500px;
+    display: flex;
+    gap: 10px;
+    width: 200px;
+    
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 10px;
 }
-#topRight{
-    position: absolute;
-    top: 0;
-    right: 80px;
-    text-align: center;
 
+#topButton{
+    background-image: linear-gradient(to left, #FE532E, #FF319F , #8314EC);
+    padding: 15px 30px 30px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    position: relative;
 }
-#topRight p{
-    z-index: 10;
-}
-#topRight .bgIcon{
-    position: absolute;
+#topButton img{
     z-index: 1;
-    right: 130px;
-    top: 20px;
+    position: absolute;
+    left: 5px;
+    top:14px
 }
+
+
 /* middle content */
 #container{
     display: flex;
@@ -71,14 +77,14 @@ padding: 10px;
     margin-left: 100px;
 }
 .middleContent h1{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
-    font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
+    margin-top: 100px;
 }
 .middleContent p{
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     font-weight: 400;
 }
