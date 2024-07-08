@@ -6,3 +6,104 @@
     max-width: 1390px;
     font-family: Big Shoulders Display;
 }
+#banner{
+    height: 400px;
+    display: flex;
+    border: 5px;
+    position: relative;
+}
+#linear-color{
+    width: 400px;
+    background: linear-gradient(92deg, #080018 0%, #FF2929 45.93%, #FFB21C 97.73%);
+}
+#noisy-color{
+    width: 800px;
+    background: url(../assets/banner/noisy-background\ 1.png);
+    background-color: black;
+    
+}
+#bannerImg{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+
+}
+#topRightButton{
+    padding: 20px;
+}
+#topRightButton img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#topRight{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    text-align: center;
+
+}
+#topRight p{
+    z-index: 10;
+}
+#topRight .bgIcon{
+    position: absolute;
+    z-index: 1;
+    right: 130px;
+    top: 20px;
+}
+/* middle content */
+#container{
+    display: flex;
+}
+.middleContent{
+    text-align: center;
+}
+.middleContent h1{
+    font-size: 50px;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/* lowerBg */
+#cardContainer{
+display: flex;
+gap: 10px;
+z-index: 20;
+position: absolute;
+left: 55px;
+bottom: -160px;
+}
+#cardContainer .card{
+    text-align: center;
+}
+
+#cardContainer .card h2{
+    font-size: 20px;
+font-style: normal;
+font-weight: 700;
+text-transform: uppercase;
+color: white;
+}
+/* #cardContainer .card p{
+    padding: 0;
+} */
+
+#cardContainer .card img{
+width: 180px;
+}
+
+
+
+#lowerBg{
+    width: 800px;
+    height: 200px;
+    border-radius: 50px;
+background: var(--Bg-background, linear-gradient(95deg, #181818 7.27%, #151515 99.21%));
+position: absolute;
+left: 30px;
+bottom: -160px;
+}
