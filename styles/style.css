@@ -5,7 +5,7 @@
 *{
     max-width: 1390px;
     font-family: Big Shoulders Display;
-    
+    margin: 0 auto;
 }
 #banner{
     max-width: 1390px;
@@ -71,6 +71,7 @@ padding: 10px;
 /* middle content */
 #container{
     display: flex;
+    width: 100%;
 }
 .middleContent{
     text-align: center;
@@ -81,7 +82,7 @@ padding: 10px;
     color: white;
     font-weight: 900;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .middleContent p{
     font-size: 16px;
@@ -92,14 +93,16 @@ padding: 10px;
 #cardContainer{
 width: 100%;
 display: flex;
-gap: 10px;
+
 z-index: 20;
 position: absolute;
-left: 55px;
+gap: -10px;
 bottom: -160px;
 }
 #cardContainer .card{
     text-align: center;
+    margin-bottom: 40px;
+    z-index: 22;
 }
 
 #cardContainer .card h2{
@@ -109,9 +112,7 @@ font-weight: 700;
 text-transform: uppercase;
 color: white;
 }
-/* #cardContainer .card p{
-    padding: 0;
-} */
+
 
 #cardContainer .card img{
 width: 180px;
@@ -126,10 +127,11 @@ width: 180px;
 background: var(--Bg-background, linear-gradient(95deg, #181818 7.27%, #151515 99.21%));
 position: absolute;
 left: 30px;
-bottom: -160px;
+top: 360px;
 }
 /* newest realese */
 #icon{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 180px;
