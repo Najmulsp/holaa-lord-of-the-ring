@@ -16,6 +16,13 @@
     width: 400px;
     background: linear-gradient(92deg, #080018 0%, #FF2929 45.93%, #FFB21C 97.73%);
 }
+#linear-color .logo{
+display: flex;
+padding: 10px;
+}
+
+
+
 #noisy-color{
     width: 800px;
     background: url(../assets/banner/noisy-background\ 1.png);
@@ -60,6 +67,7 @@
 }
 .middleContent{
     text-align: center;
+    margin-left: 100px;
 }
 .middleContent h1{
     font-size: 50px;
@@ -67,6 +75,11 @@
     font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
+}
+.middleContent p{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
 }
 /* lowerBg */
 #cardContainer{
@@ -106,4 +119,24 @@ background: var(--Bg-background, linear-gradient(95deg, #181818 7.27%, #151515 9
 position: absolute;
 left: 30px;
 bottom: -160px;
+}
+/* newest realese */
+#icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+#movie{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    /* background-color: black; */
+}
+#movie>img{
+    width: 138px;
+}
+#movie img:hover{
+    
+    scale: 1.1;
+    transition: all 0.5s;
 }
